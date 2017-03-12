@@ -10,7 +10,7 @@ router.post('/valid', function(req, res, next) {
 
 
 
-  res.json({"code": validator.testEmail(req.body.email)}); //Пример как вызвать валидатор через АПИ
+  res.json({"code": validator.testEmail(req.body.email), "resultRole": validator.roleValid(req.body.role)}); //Пример как вызвать валидатор через АПИ
 
 
 
