@@ -36,8 +36,9 @@ module.exports = {
 
     },
 
-    checkNameOfCompany: function (companyName) {
 
+    checkNameOfCompany: function (companyName) {
+        console.log();
         if(companyName.length>0 && companyName.length <=30){
             return true;
         }
