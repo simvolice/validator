@@ -38,7 +38,7 @@ module.exports = {
 
 
     checkNameOfCompany: function (companyName) {
-        console.log();
+
         if(companyName.length>0 && companyName.length <=30){
             return true;
         }
@@ -106,7 +106,6 @@ module.exports = {
 
     checkTokenCSRF: function (token) {
 
-        console.log(token);
         const tokenCSRF = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[1-5][0-9a-f]{3}-?[89ab][0-9a-f]{3}-?[0-9a-f]{12}$/;
         return tokenCSRF.test(token);
 

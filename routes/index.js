@@ -10,7 +10,7 @@ router.post('/valid', function(req, res, next) {
 
 
 
-res.json({"Token": validator.checkAddressOfMonitor(req.body.token)}); //Пример как вызвать валидатор через АПИ
+res.json({"Token": validator.checkAddressOfMonitor(req.body.tok)}); //Пример как вызвать валидатор через АПИ
 
 
 });
